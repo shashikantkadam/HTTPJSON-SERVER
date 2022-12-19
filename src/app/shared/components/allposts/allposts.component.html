@@ -1,0 +1,16 @@
+
+            <ng-container *ngFor="let post of postArray">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>{{post.title}}</h2>
+                    </div>
+                    <div class="card-body">
+                        {{post.body}}
+                    </div>
+                    <div class="card-footer text-right">
+                        <button class="btn btn-info mr-2" type="button" [routerLink]="['/update',post.id]">Edit</button>
+                        <button class="btn btn-danger" type="button" (click)="OnPostDelete(post.id)">Delete</button>
+                    </div>
+                </div>
+            </ng-container>
+

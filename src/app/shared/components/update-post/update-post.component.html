@@ -1,0 +1,13 @@
+<form [formGroup]="updatepostform">
+    <div class="form-group">
+        <label for="title">title</label>
+        <input type="text" id="title" formControlName="title" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="body">post</label>
+        <input type="text" id="body" formControlName="body" class="form-control">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="button" (click)="OnUpdatePost()" routerLink="/dashboard">Update Post</button>
+    </div>
+</form>

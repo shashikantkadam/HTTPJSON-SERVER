@@ -1,0 +1,15 @@
+<ng-container>
+    <form [formGroup]="postForm" (submit)="OnPostSubmit()">
+        <div class="form-group">
+            <label for="title">title</label>
+            <input type="text" formControlName="title" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="body">post</label>
+            <input type="text" formControlName="body" id="body" class="form-control">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Create Post</button>
+        </div>
+    </form>
+</ng-container>
